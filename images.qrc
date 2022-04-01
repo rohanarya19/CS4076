@@ -1,0 +1,39 @@
+<RCC>
+    <qresource prefix="/Images">
+        <file>restaurantmain.jpg</file>
+        <file>burger.jpg</file>
+        <file>irish-guiness.jpg</file>
+        <file>attack - Copy.png</file>
+        <file>attack.png</file>
+        <file>cave - Copy.jpg</file>
+        <file>cave.jpg</file>
+        <file>dragon - Copy.jpg</file>
+        <file>dragon - Copy.png</file>
+        <file>dragon.jpg</file>
+        <file>dragon.png</file>
+        <file>dragonAttack - Copy.png</file>
+        <file>dragonAttack.png</file>
+        <file>imgres - Copy.jpg</file>
+        <file>imgres.jpg</file>
+        <file>key - Copy.png</file>
+        <file>key.png</file>
+        <file>pic - Copy.jpg</file>
+        <file>pic.jpg</file>
+        <file>potion - Copy.jpg</file>
+        <file>potion.jpg</file>
+        <file>sword - Copy.jpg</file>
+        <file>sword.jpg</file>
+        <file>sword2 - Copy.jpg</file>
+        <file>sword2.jpg</file>
+        <file>teleporter - Copy.png</file>
+        <file>teleporter.png</file>
+        <file>Treasure - Copy.jpeg</file>
+        <file>treasure - Copy.jpg</file>
+        <file>Treasure.jpeg</file>
+        <file>treasure.jpg</file>
+        <file>vampire - Copy.png</file>
+        <file>vampire.png</file>
+        <file>vampireAttacked.png</file>
+    </qresource>
+    <qresource prefix="/"/>
+</RCC>
