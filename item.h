@@ -5,7 +5,7 @@
 using namespace std;
 class Item: public QGraphicsPixmapItem
 {
-    friend class Background;
+    friend class restaurant;
     private:
         QString description;
         int weight;

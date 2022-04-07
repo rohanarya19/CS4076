@@ -31,6 +31,7 @@ Zork::~Zork()
     delete hotdrinks;
     delete ambience;
     delete dishes;
+    delete bills;
 }
 
 Player* Zork::play()
@@ -49,32 +50,35 @@ Room * Zork::createRooms()
     hotdrinks=new cafe("HOT BEVERAGE",30);
     ambience=new lounge("AMBIENCE",30);
     dishes=new dishwasher("DISHES",30);
-    a= new Room("a");
-    b= new Room("CAFE");
+    bills=new billing("BILLS",30);
+    a= new Room("BILLING : Click on the Cash button to pay by by Cash. Alternatively, click on the Card button to pay by card.");
+    a->addItem(bills);
+    a->setItem(true);
+    b= new Room("CAFE : Click on 'Prepare Beverages'");
     b->addItem(hotdrinks);
     b->setItem(true);
-    c= new Room("STORAGE");
+    c= new Room("STORAGE : Click on 'Collect Raw Materials' ");
     c->addItem(storedfood);
     c->setItem(true);
-    d= new Room("DISHWASHER");
+    d= new Room("DISHWASHER : Click on 'Wash Dishes' to continue");
     d->addItem(dishes);
     d->setItem(true);
-    e= new Room("LOUNGE");
+    e= new Room("LOUNGE : Select alcohol from drop down box to continue. Click on serve beverage twice to proceed.");
     e->addItem(ambience);
     e->setItem(true);
-    f= new Room("DINING");
+    f= new Room("DINING : Click on 'Collect Dishes' to vollect already dirty dishes");
     f->addItem(eatenfood);
     f->setItem(true);
-    g= new Room("BAR");
+    g= new Room("BAR : Click on 'Make Drinks' ");
     g->addItem(drinks);
     g->setItem(true);
-    h= new Room("KITCHEN");
+    h= new Room("KITCHEN : Click on 'Collect Order' ");
     h->addItem(cookedfood);
     h->setItem(true);
-    i= new Room("COLD STORAGE");
+    i= new Room("COLD STORAGE : Click on the button 'Collect Cold Items' ");
     i->addItem(coldfood);
     i->setItem(true);
-    j= new Room("WELCOME");
+    j= new Room("WELCOME : Click on Start");
     rooms+=a;
     rooms+=b;
     rooms+=c;

@@ -13,11 +13,12 @@
 #include "cafe.h"
 #include "lounge.h"
 #include "dishwasher.h"
+#include "billing.h"
 #include "room.h"
 
 class Zork : public QGraphicsView
 {
-    friend class Background;
+    friend class restaurant;
     public:
         Zork(QWidget * parent=0);
         ~Zork();
@@ -34,6 +35,7 @@ class Zork : public QGraphicsView
         cafe * hotdrinks;
         lounge * ambience;
         dishwasher * dishes;
+        billing * bills;
         Room *a, *b, *c, *d, *e, *f, *g, *h, *i, *j;
         Room *currentRoom;
         myVector<Room*> rooms;
